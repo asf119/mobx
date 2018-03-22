@@ -16,7 +16,6 @@ export default class extends Component {
     
     test = () => {
         //console.log(this.props.store)
-
         this.props.store.authStore.ToLogin()
         //this.props.store.authStore.isLogin = true
     }
@@ -30,7 +29,7 @@ export default class extends Component {
                 <ul className="navbar-nav mr-auto">
                     {this.nav}
                 </ul>
-                <button onClick={this.test}>click</button>
+                <button className="btn btn-primary" onClick={this.test}>Login</button>
                 </div>
                 </nav>        
     }
