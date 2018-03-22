@@ -1,13 +1,21 @@
 import React from 'react'
 import { Route } from "react-router-dom";
 import Home from './path/Home'
+import Login from './path/Login'
 
 export const routes = [
     {
         name:"home",
         path:"/",
         exact:true,
-        component:Home
+        component:Home,
+        onMenu:true
+    },
+    {
+        name:"Login",
+        path:'/login',
+        component:Login,
+        onMenu:false
     }
 ]
 
