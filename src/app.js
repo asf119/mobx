@@ -9,8 +9,8 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import Store from './mobx/index'
 import AuthStore from './mobx/AuthStore'
 import { Provider } from 'mobx-react'
-//const store = new Store()
-const store = new AuthStore()
+const store = new Store()
+
 const App = () => <div>
                     <Provider store={store}>
                     <Router>

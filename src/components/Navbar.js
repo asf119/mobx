@@ -15,8 +15,9 @@ export default class extends Component {
     })  
     
     test = () => {
-        console.log(this.props.store)
-        //this.props.store.ToLogin(true)
+        //console.log(this.props.store)
+
+        this.props.store.authStore.ToLogin()
         //this.props.store.authStore.isLogin = true
     }
 

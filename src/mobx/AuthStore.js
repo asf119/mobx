@@ -4,8 +4,8 @@ export default class {
     @observable isLogin = false
     @observable user = ""
 
-    @action ToLogin (login) {
-        this.isLogin = login
+    @action.bound ToLogin () {
+        this.isLogin = !this.isLogin
     }
 
 }
